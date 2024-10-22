@@ -1,0 +1,142 @@
+table financials
+	lineageTag: f680d1d1-66a0-4314-9ff1-b6e0e24be041
+
+	column Segment
+		dataType: string
+		lineageTag: c3b99989-4a33-416a-a590-7ef7506f5d65
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 2da04e57-7dc4-4c5a-b061-0461f3e295fa
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: 0f7e94df-ace4-4806-8012-c14fbd3bd08b
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discount Band'
+		dataType: string
+		lineageTag: 9974e369-a538-4fe8-b7d2-bd233cadf957
+		summarizeBy: none
+		sourceColumn: Discount Band
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Units Sold'
+		dataType: string
+		lineageTag: 79162a1c-6c60-4e00-bdad-5f551bacdfba
+		summarizeBy: none
+		sourceColumn: Units Sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manufacturing Price'
+		dataType: string
+		lineageTag: 6875330a-fded-4b5e-bd0d-b67852afba6f
+		summarizeBy: none
+		sourceColumn: Manufacturing Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sale Price'
+		dataType: string
+		lineageTag: a51b0e92-e817-4f68-8fe4-02f3c6e96d5a
+		summarizeBy: none
+		sourceColumn: Sale Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gross Sales'
+		dataType: string
+		lineageTag: 09714f71-3d11-4cac-b5bb-e49c3b0cd931
+		summarizeBy: none
+		sourceColumn: Gross Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discounts
+		dataType: string
+		lineageTag: 28aea5f9-3e31-4240-a4c6-eb67efbcc24d
+		summarizeBy: none
+		sourceColumn: Discounts
+
+		annotation SummarizationSetBy = Automatic
+
+	column ' Sales'
+		dataType: string
+		lineageTag: b07814d6-5070-4f51-a491-dda2c69499bc
+		summarizeBy: none
+		sourceColumn: " Sales"
+
+		annotation SummarizationSetBy = Automatic
+
+	column COGS
+		dataType: string
+		lineageTag: 8063e3e2-e36f-4256-8b2d-417889a9b11e
+		summarizeBy: none
+		sourceColumn: COGS
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: string
+		lineageTag: ceceaeee-a35c-4152-a238-abdc193db8b2
+		summarizeBy: none
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: string
+		lineageTag: a16738ca-2736-475c-8a56-55b101d2fb0d
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: string
+		lineageTag: 37336b42-21e3-445f-a9dd-8d37a473e24c
+		summarizeBy: none
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: bead066e-92ae-4b52-8fb4-80cff5382d98
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: string
+		lineageTag: 4417bff5-1497-40ac-94bb-c2df7190dfff
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition financials = m
+		mode: import
+		source =
+				let
+				 Source = Excel.Workbook(File.Contents("C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.137.952.0_x64__8wekyb3d8bbwe\bin\SampleData\Financial Sample.xlsx"), null, true),
+				    financials_Table = Source{[Item="financials",Kind="Table"]}[Data]
+				in
+				 financials_Table
+
+	annotation PBI_ResultType = Table
+
