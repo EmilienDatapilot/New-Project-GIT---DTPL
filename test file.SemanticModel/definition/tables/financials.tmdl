@@ -1,6 +1,10 @@
 table financials
 	lineageTag: f680d1d1-66a0-4314-9ff1-b6e0e24be041
 
+	measure Total = SUM(financials[Profit])
+		formatString: 0
+		lineageTag: 834c0481-e9c7-4c92-98e4-132f0024270e
+
 	column Segment
 		dataType: string
 		lineageTag: c3b99989-4a33-416a-a590-7ef7506f5d65
