@@ -1,21 +1,7 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
-    {
-      "resourcePackage": {
-        "disabled": false,
-        "items": [
-          {
-            "name": "Capture_d__cran_2023-02-06_1112639698934025052.png",
-            "path": "Capture_d__cran_2023-02-06_1112639698934025052.png",
-            "type": 100
-          }
-        ],
-        "name": "RegisteredResources",
-        "type": 1
-      }
-    },
     {
       "resourcePackage": {
         "disabled": false,
@@ -39,16 +25,15 @@
       "filters": "[]",
       "height": 720.00,
       "name": "04e06e8e1d3aa13800ca",
-      "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"db950c592973c400a246\",\"layouts\":[{\"id\":0,\"position\":{\"x\":428.97967657846783,\"y\":64.25246257122426,\"z\":1,\"width\":515.9094788807124,\"height\":279.68719001591734,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(financials.Profit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Profit\"}},\"Function\":3},\"Name\":\"Min(financials.Profit)\",\"NativeReferenceName\":\"First Profit\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"db950c592973c400a246\",\"layouts\":[{\"id\":0,\"position\":{\"x\":428.97967657846783,\"y\":64.25246257122426,\"z\":1000,\"width\":515.9094788807124,\"height\":279.68719001591734,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(financials.Profit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Profit\"}},\"Function\":3},\"Name\":\"Min(financials.Profit)\",\"NativeReferenceName\":\"First Profit\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 279.69,
           "width": 515.91,
           "x": 428.98,
           "y": 64.25,
-          "z": 1.00
+          "z": 1000.00
         },
         {
           "config": "{\"name\":\"fe98c7928dd6e3007d99\",\"layouts\":[{\"id\":0,\"position\":{\"x\":75.59113243673441,\"y\":64.25246257122426,\"z\":0,\"width\":279.68719001591734,\"height\":279.68719001591734,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"financials.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(financials. Sales)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Year\"},\"Name\":\"financials.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":5},\"Name\":\"CountNonNull(financials. Sales)\",\"NativeReferenceName\":\" Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
@@ -69,16 +54,16 @@
       "filters": "[]",
       "height": 720.00,
       "name": "e40f2c64cbdec60a6e5b",
-      "ordinal": 2,
+      "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"29907789190d40017358\",\"layouts\":[{\"id\":0,\"position\":{\"x\":653.8632955777528,\"y\":219.2142840665298,\"z\":1,\"width\":497.0116957715288,\"height\":279.68719001591734,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(financials.Discounts)\"}],\"Category\":[{\"queryRef\":\"financials.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discounts\"}},\"Function\":5},\"Name\":\"CountNonNull(financials.Discounts)\",\"NativeReferenceName\":\"Discounts\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Month Name\"},\"Name\":\"financials.Month Name\",\"NativeReferenceName\":\"Month Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discounts\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"29907789190d40017358\",\"layouts\":[{\"id\":0,\"position\":{\"x\":653.8632955777528,\"y\":219.2142840665298,\"z\":1000,\"width\":497.0116957715288,\"height\":279.68719001591734,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(financials.Discounts)\"}],\"Category\":[{\"queryRef\":\"financials.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discounts\"}},\"Function\":5},\"Name\":\"CountNonNull(financials.Discounts)\",\"NativeReferenceName\":\"Discounts\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Month Name\"},\"Name\":\"financials.Month Name\",\"NativeReferenceName\":\"Month Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discounts\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 279.69,
           "width": 497.01,
           "x": 653.86,
           "y": 219.21,
-          "z": 1.00
+          "z": 1000.00
         },
         {
           "config": "{\"name\":\"576c891f1404e0e5ce21\",\"layouts\":[{\"id\":0,\"position\":{\"x\":143.6231516297954,\"y\":198.42672264642783,\"z\":0,\"width\":385.5147754273455,\"height\":279.68719001591734,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"financials.Discount Band\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(financials.Discount Band)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"},\"Name\":\"financials.Discount Band\",\"NativeReferenceName\":\"Discount Band\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"}},\"Function\":5},\"Name\":\"CountNonNull(financials.Discount Band)\",\"NativeReferenceName\":\"Count of Discount Band\"}]},\"drillFilterOtherVisuals\":true}}",
