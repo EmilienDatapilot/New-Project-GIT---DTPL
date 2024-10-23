@@ -7,6 +7,20 @@
         "disabled": false,
         "items": [
           {
+            "name": "Capture_d__cran_2023-02-06_1112639698934025052.png",
+            "path": "Capture_d__cran_2023-02-06_1112639698934025052.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
             "name": "CY24SU10",
             "path": "BaseThemes/CY24SU10.json",
             "type": 202
@@ -43,26 +57,6 @@
           "width": 279.69,
           "x": 75.59,
           "y": 64.25,
-          "z": 0.00
-        }
-      ],
-      "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Page 1",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "c5d1c635c8b71d839241",
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"61a453efcd37d8095b6a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":136.06403838612195,\"y\":49.13423608387737,\"z\":0,\"width\":319.37253454520294,\"height\":279.68719001591734,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"financials. Sales\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(financials.Country)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"},\"Name\":\"financials. Sales\",\"NativeReferenceName\":\" Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"}},\"Function\":5},\"Name\":\"CountNonNull(financials.Country)\",\"NativeReferenceName\":\"Country\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 279.69,
-          "width": 319.37,
-          "x": 136.06,
-          "y": 49.13,
           "z": 0.00
         }
       ],
